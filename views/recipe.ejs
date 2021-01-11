@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <% for(var i=0;i<recipes.length;i++) {%>
+        <div class="col">
+          <div class="card h-100">
+            <img src=<%= recipes[i].recipe_image %> class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"><%= recipes[i].recipe_name %></h5>
+              <p class="card-text"><%= recipes[i].recipe_description %></p>
+            </div>
+          </div>
+        </div>
+        <%}%>
+      </div> 
+</body>
+</html>

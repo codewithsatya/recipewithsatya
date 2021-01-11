@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+{
+    margin:0;
+    padding:0;
+}
+
+html,body{
+    width:100%;
+    height:100%;
+}
+
+body{
+    background-image:url(https://image.shutterstock.com/image-photo/italian-food-ingredients-vegetables-olive-260nw-522608407.jpg);
+    background-size:cover;
+}
+
+.box{
+    height:440px;
+    width:300px;
+    background-color:rgba(255, 255, 255, 0.845);
+    margin-left:35%;
+    margin-top:5%;
+    position:absolute;
+    padding:10px 50px;
+}
+
+.button-box{
+    width:220px;
+    margin:35px auto;
+    position:relative;
+    border-radius:30px;
+    box-shadow:0 0 20px 9px #ff61241f;
+}
+
+
+
+img{
+    width:30px;
+    height:30px;
+    margin-left:20px;
+}
+
+.btn{
+    position:absolute;
+    top:0;
+    left:0;
+    width:110px;
+    height:100%;
+    background-image:linear-gradient(to right,#ff105f,#ffad06);
+    border-radius:30px;
+    transition:0.5s;
+}
+
+.input-box{
+    top:150px;
+    width:280px;
+    transition:0.5s;
+}
+
+input{
+    width:100%;
+    padding:10px 0px;
+    margin:15px 0px;
+}
+
+.submitbutton{
+    width:85%;
+    padding:10px 13px;
+    cursor:pointer;
+    background-image:linear-gradient(to right,#ff105f,#ffad06);
+    outline:none;
+    border:none;
+    border-radius:30px;
+    margin:auto;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.register-form{
+    
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="button-box">
+    <div class="btn"></div>
+    </div>
+<form method="POST" action="/recipe">
+    <div class="register-form input-box">
+        <input type="text" name="recipe_name" placeholder="recipe_name">
+       <input type="text" name="recipe_description" placeholder="recipe_description">
+        <input type="text" name="recipe_image" placeholder="recipe_image">
+        <button class="submitbutton">Submit</button>
+    </div>
+    </div>  
+</form>               
+</body>
+</html>
